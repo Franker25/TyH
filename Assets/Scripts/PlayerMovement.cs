@@ -12,12 +12,12 @@ public class PlayerMovement : MonoBehaviour // Declares this script as a compone
 
     private bool canMove = true; // Flag that allows movement to be enabled/disabled (kept in case you want to lock movement later, e.g. during a cutscene)
 
-    void Start() // Called once when the object is created/enabled
+    void Start() 
     {
         characterController = GetComponent<CharacterController>(); // Grabs the CharacterController attached to this same GameObject and stores it for later use
     }
 
-    void Update() // Called once every frame
+    void Update() 
     {
         Vector3 forward = transform.TransformDirection(Vector3.forward); // Converts the object's local "forward" direction into world-space, so movement follows where the player is facing
         Vector3 right = transform.TransformDirection(Vector3.right);     // Converts the object's local "right" direction into world-space, same reason as above
