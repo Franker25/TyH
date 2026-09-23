@@ -1072,8 +1072,8 @@ GameObject:
   m_Component:
   - component: {fileID: 411744542}
   - component: {fileID: 411744544}
-  - component: {fileID: 411744543}
   - component: {fileID: 411744545}
+  - component: {fileID: 411744546}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -1098,28 +1098,6 @@ Transform:
   - {fileID: 1622477565}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &411744543
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 411744539}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3d035db86e85aa64898a0bf9c17d712e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PlayerMovement
-  playerCamera: {fileID: 330585545}
-  lookSpeed: 2
-  lookXLimit: 45
-  walkSpeed: 30
-  runSpeed: 40
-  crouchSpeed: 15
-  jumpPower: 65
-  gravity: 50
-  defaultHeight: 2
-  crouchHeight: 1
 --- !u!143 &411744544
 CharacterController:
   m_ObjectHideFlags: 0
@@ -1157,6 +1135,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8df2a89c3ddcae64690afba56ed332b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Estructuras2
+--- !u!114 &411744546
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 411744539}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d035db86e85aa64898a0bf9c17d712e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerMovement
+  walkSpeed: 6
+  jumpPower: 15
+  gravity: 10
 --- !u!1 &416480427
 GameObject:
   m_ObjectHideFlags: 0
