@@ -20,9 +20,8 @@ public class Timer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //LogicaTimer();
         LogicaTimer();
-        MostrarParesWhile();
+
     }
 
     void LogicaTimer()
@@ -40,6 +39,7 @@ public class Timer : MonoBehaviour
             {
                 terminar = true;
                 Debug.Log("Terminado");
+                MostrarParesWhile();
             }
 
             if (segundos % 2 == 0) // El % funciona para marcar el modulo, lo cual permite marcar el 2 que el 0 son iguales
@@ -89,7 +89,7 @@ public class Timer : MonoBehaviour
         int index = 0;
         while (index < 5)
         {
-            if (segundospares[index] >= 5) 
+            if (segundospares[index] > 5) 
                 Debug.Log("Par: " + segundospares[index]);
             index++;
         }
